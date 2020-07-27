@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Football</title>
+	<script type="text/javascript">
+
+			/*
+			var num1=prompt('Enter a number!');
+			if(num1%2==1){
+				alert(num1+' is ODD');
+			}
+			else{
+				alert(num1+' is EVEN');
+			}
+			*/
+
+		function show(){
+			var sub1=parseInt(document.myform.sub1.value);
+			var sub2=parseInt(document.myform.sub2.value);
+			var sub3=parseInt(document.myform.sub3.value);
+			var total=sub1+sub2+sub3;
+			document.myform.total.value=total;
+			if( (sub1>=40)&&(sub2>=40)&&(sub3>=40)){
+				document.getElementById('result').textContent='Passed';
+			}
+			else{
+				document.getElementById('result').textContent='Failed';
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Enter Exam Results</h1>
+	<form name="myform">
+		Football result:<input type="text" name="football">
+		<input type="button" onclick="show()" value="Show"><br>
+		
+		Point:<label id="result"></label>
+
+
+</body>
+</html>
